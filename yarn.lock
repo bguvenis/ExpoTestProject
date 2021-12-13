@@ -636,7 +636,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
-"@babel/plugin-transform-object-assign@^7.0.0":
+"@babel/plugin-transform-object-assign@^7.0.0", "@babel/plugin-transform-object-assign@^7.10.4":
   version "7.16.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-object-assign/-/plugin-transform-object-assign-7.16.0.tgz#750c726397f1f6402fb1ceffe9d8ff3595c8a0df"
   dependencies:
@@ -940,7 +940,7 @@
     xcode "^3.0.1"
     xml2js "^0.4.23"
 
-"@expo/config-plugins@^4.0.2":
+"@expo/config-plugins@^4.0.11", "@expo/config-plugins@^4.0.2":
   version "4.0.12"
   resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-4.0.12.tgz#9e1ac9f3fdb0415c6bc567533652d36ff49aa13d"
   dependencies:
@@ -2115,6 +2115,13 @@ expo-asset@~8.4.3:
     path-browserify "^1.0.0"
     url-parse "^1.4.4"
 
+expo-community-flipper@^43.0.5:
+  version "43.0.5"
+  resolved "https://registry.yarnpkg.com/expo-community-flipper/-/expo-community-flipper-43.0.5.tgz#8f8f1602e324bb65a77c56da466b035ab5873ac4"
+  dependencies:
+    "@expo/config-plugins" "^4.0.11"
+    resolve-from "^5.0.0"
+
 expo-constants@~12.1.3:
   version "12.1.3"
   resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-12.1.3.tgz#bec48a42a7760b010450961c209bb4b1158b9cd6"
@@ -2122,6 +2129,36 @@ expo-constants@~12.1.3:
     "@expo/config" "^5.0.9"
     expo-modules-core "~0.4.4"
     uuid "^3.3.2"
+
+expo-dev-client@~0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/expo-dev-client/-/expo-dev-client-0.6.3.tgz#ab3f6cf31c55c96b70f029bb0733236976eafe98"
+  dependencies:
+    "@expo/config-plugins" "^4.0.2"
+    expo-dev-launcher "0.8.4"
+    expo-dev-menu "0.8.4"
+    expo-dev-menu-interface "0.4.1"
+    expo-manifests "~0.2.2"
+    expo-updates-interface "~0.4.0"
+
+expo-dev-launcher@0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/expo-dev-launcher/-/expo-dev-launcher-0.8.4.tgz#505a8ad5f4b31903b161d57c379247a6eef9da4c"
+  dependencies:
+    "@expo/config-plugins" "^4.0.2"
+    resolve-from "^5.0.0"
+    semver "^7.3.5"
+
+expo-dev-menu-interface@0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/expo-dev-menu-interface/-/expo-dev-menu-interface-0.4.1.tgz#1499992cf96f3d4ccd02eefcfc1c182f44e876c7"
+
+expo-dev-menu@0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/expo-dev-menu/-/expo-dev-menu-0.8.4.tgz#2a329805abe43ab651483bea601c13b69bfc052c"
+  dependencies:
+    "@expo/config-plugins" "^4.0.2"
+    expo-dev-menu-interface "0.4.1"
 
 expo-error-recovery@~3.0.3:
   version "3.0.3"
@@ -2144,9 +2181,19 @@ expo-font@~10.0.3:
     expo-modules-core "~0.4.4"
     fontfaceobserver "^2.1.0"
 
+expo-json-utils@~0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/expo-json-utils/-/expo-json-utils-0.2.0.tgz#2cd52648060c7905f8fd330d4ac22a5278e40650"
+
 expo-keep-awake@~10.0.0:
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-10.0.0.tgz#275a3e02f99bc0429790047add126c1dcce60d63"
+
+expo-manifests@~0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/expo-manifests/-/expo-manifests-0.2.2.tgz#7033ab52750a19d554fbb4255d41a70eac839ee2"
+  dependencies:
+    expo-json-utils "~0.2.0"
 
 expo-modules-autolinking@~0.3.4:
   version "0.3.4"
@@ -2168,6 +2215,10 @@ expo-modules-core@~0.4.4, expo-modules-core@~0.4.9:
 expo-status-bar@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.1.0.tgz#b1015a69c8563b7cadcb5b6c726227397610725d"
+
+expo-updates-interface@~0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/expo-updates-interface/-/expo-updates-interface-0.4.0.tgz#20961f2cb4bd068a74c29434affa08791dbaa240"
 
 expo@~43.0.2:
   version "43.0.4"
@@ -3477,6 +3528,10 @@ mkdirp@^0.5.1:
   dependencies:
     minimist "^1.2.5"
 
+mockdate@^3.0.2:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/mockdate/-/mockdate-3.0.5.tgz#789be686deb3149e7df2b663d2bc4392bc3284fb"
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -3855,7 +3910,7 @@ range-parser@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
 
-react-devtools-core@^4.6.0:
+react-devtools-core@^4.21.0, react-devtools-core@^4.6.0:
   version "4.21.0"
   resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.21.0.tgz#a54c9a0fd7261491e616d6c87d1869e011d8521d"
   dependencies:
@@ -3885,6 +3940,19 @@ react-native-codegen@^0.0.6:
     flow-parser "^0.121.0"
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
+
+react-native-flipper@^0.125.0:
+  version "0.125.0"
+  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.125.0.tgz#684ded2b43cf62bb037a47e4098f590ceb22c699"
+
+react-native-reanimated@~2.2.0:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-2.2.4.tgz#36c5d15028b0bd7d479fba5199117ac870c7a532"
+  dependencies:
+    "@babel/plugin-transform-object-assign" "^7.10.4"
+    fbjs "^3.0.0"
+    mockdate "^3.0.2"
+    string-hash-64 "^1.0.3"
 
 react-native-web@0.17.1:
   version "0.17.1"
@@ -4389,6 +4457,10 @@ static-extend@^0.1.1:
 stream-buffers@2.2.x:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/stream-buffers/-/stream-buffers-2.2.0.tgz#91d5f5130d1cef96dcfa7f726945188741d09ee4"
+
+string-hash-64@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/string-hash-64/-/string-hash-64-1.0.3.tgz#0deb56df58678640db5c479ccbbb597aaa0de322"
 
 string-width@^4.1.0, string-width@^4.2.0:
   version "4.2.3"
